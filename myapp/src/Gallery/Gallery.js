@@ -23,7 +23,7 @@ function Gallery() {
       <div className="landing-page">
         <h1>School of Shopping</h1>
         {selectedProducts.map(product => (
-            <SingularGrid title={product.title} image={product.image}/>
+            <SingularGrid title={product.title} image={product.image} description = {product.description} price = {product.price.toFixed(2)}/>
         ))}
         {/* <div className="product-list">
           {selectedProducts.map(product => (
