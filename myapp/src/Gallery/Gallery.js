@@ -20,19 +20,14 @@ function Gallery() {
     <div >
       <nav>
       </nav>
+
+      {<h2>
+      </h2>}
       <div className="landing-page">
-        <h1>School of Shopping</h1>
         {selectedProducts.map(product => (
             <SingularGrid title={product.title} image={product.image} description = {product.description} price = {product.price.toFixed(2)}/>
         ))}
-        {/* <div className="product-list">
-          {selectedProducts.map(product => (
-            <div className="product" key={product.id}>
-              <img src={product.image}/> <p>{product.title}</p> <p>{product.description}</p><p>£{product.price.toFixed(2)}</p>
-
-            </div>
-          ))}
-        </div> */}
+   
       </div>
     </div>
   );
