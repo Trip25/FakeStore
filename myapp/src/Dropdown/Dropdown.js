@@ -16,7 +16,7 @@ export const Dropdown = ({handleChange}) => {
         getCategories()
     }, []);
   return (
-    <div className="search">
+    <div >
     <select className = "dropdown" onChange={handleChange}>
     <option value="">Categories</option>
     {categories.map((category, i) => {

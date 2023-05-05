@@ -9,6 +9,8 @@ export default function SingularGrid({ image, title, description, price }) {
     <div className="SingularGrid">
       <img src={image} alt={title} />
       <p>{title}</p>
+      <p>£{price}</p>
+
     </div>
 
   )

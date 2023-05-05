@@ -9,21 +9,6 @@ function App() {
   const [data, setData] = useState([]);
   const [userCategory, setUserCategory] = useState('');
 
-  // useEffect(() => {
-  //   fetch('https://fakestoreapi.com/products')
-  //     .then(response => response.json())
-  //     .then(data => setData(data))
-  //     .catch(error => console.log(error));
-  // }, []);
-  // useEffect(() => {
-  //   fetch(`https://fakestoreapi.com/products/category/${userCategory}`)
-  //     .then(response => response.json())
-  //     .then(data => setData(data))
-  //     .catch(error => console.log(error));
-  // }, [userCategory]);
-
-  //https://fakestoreapi.com/products/category/${userCategory}
-
   useEffect(() => {
     const url = userCategory
       ? `https://fakestoreapi.com/products/category/${userCategory}`
@@ -41,10 +26,14 @@ function App() {
   console.log(userCategory)
   return (
     <div className="App">
-      <h1 className="title">School of Shopping</h1>
-      <div className="nav"></div>
+        <nav className="navbar">
+      <h1 className="title">School of Shopping</h1>    
+        </nav> 
+        
+        <div className = "search"> 
       <SearchBar searchTerm = {searchTerm} setSearchTerm = {setSearchTerm}  />
       <Dropdown handleChange={handleChange}/>
+      </div>
       <Gallery searchTerm = {searchTerm} setSearchTerm = {setSearchTerm} data={data}/>
     </div>
   );
