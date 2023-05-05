@@ -27,7 +27,8 @@ function App() {
   return (
     <div className="App">
         <nav className="navbar">
-      <h1 className="title">School of Shopping</h1>    
+      <h1 className="title">School of Shopping</h1> 
+      <img src ='https://simg.nicepng.com/png/small/300-3002393_shopping-cart-icon-shopping-cart-icon-minimalist.png' className = "cart"/>   
         </nav> 
         
         <div className = "search"> 
