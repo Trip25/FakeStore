@@ -39,6 +39,7 @@ height: 20px;
 
 .dropdown{
 height: 27px;
+cursor: pointer;
 
 }
 
@@ -50,6 +51,7 @@ margin: 30px;
 gap: 20px;
 margin-bottom: 60px;
 padding: 0;
+cursor: pointer;
 }
 
 .navbar {
