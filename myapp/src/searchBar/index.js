@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 
 function SearchBar({searchTerm, setSearchTerm}) {
-  const [data, setData] = useState([]);
+  
   
 
   const handleSearch = (e) => {

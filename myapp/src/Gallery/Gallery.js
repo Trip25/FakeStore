@@ -6,18 +6,13 @@ import SingularGrid from '../SingularGrid/SingularGrid';
 
 
 
-function Gallery({searchTerm, setSearchTerm}) {
+function Gallery({searchTerm, setSearchTerm, data}) {
   const [products, setProducts] = useState([]);
-  const [data, setData] = useState([]);
+
 
   
 
-  useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
-      .then(response => response.json())
-      .then(data => setData(data))
-      .catch(error => console.log(error));
-  }, []);
+  
   
   //const selectedProducts = products.slice(0, Math.min(products.length, 20));
   const filteredData = data.filter(item => item.title.toLowerCase().includes(searchTerm.toLowerCase()));
