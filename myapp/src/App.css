@@ -20,7 +20,8 @@
 
 .title {
 display: block;
+}
 
-
-
+.search {
+  display: inline-block;
 }

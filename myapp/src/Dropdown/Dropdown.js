@@ -16,13 +16,13 @@ export const Dropdown = ({handleChange}) => {
         getCategories()
     }, []);
   return (
-    <div>
+    <div className="search">
     <select className = "dropdown" onChange={handleChange}>
-    <option value="">All</option>
+    <option value="">Categories</option>
     {categories.map((category, i) => {
         return (
             <option key={i} value={category}>
-            {category}
+            {category.charAt(0).toUpperCase() + category.slice(1)}
             </option>
         );
     })}

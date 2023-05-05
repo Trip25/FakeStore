@@ -10,8 +10,8 @@ function SearchBar({searchTerm, setSearchTerm}) {
   }
 
   return (
-    <div>
-      <input type="text"  value={searchTerm} onChange={handleSearch} />
+    <div className="search">
+      <input  type="text"  value={searchTerm} onChange={handleSearch} />
     </div>
   );
 }
