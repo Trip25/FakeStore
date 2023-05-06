@@ -1,6 +1,8 @@
-//photo
-//item
-//price
+/*PLAN
+1. Create a singular grid component
+this will be used to display the items in the grid
+Need the item photo, title, price in £
+*/
 
 import React from 'react'
 
