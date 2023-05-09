@@ -48,9 +48,9 @@ function App() {
   return (
     <div className="App" style={darkMode ? darkStyles.body : lightStyles.body}>
       <nav className="navbar">
-        <h1 className="title">School of Shopping</h1>
+        <h1 className="title">Not-a-Real-E-Store</h1>
           <img src ='https://simg.nicepng.com/png/small/300-3002393_shopping-cart-icon-shopping-cart-icon-minimalist.png' className = "cart"/>    
-          <button onClick={() => setDarkMode(!darkMode)}>Toggle Dark Mode</button>
+          <button className='dark-mode-btn' onClick={() => setDarkMode(!darkMode)}>Toggle Dark Mode</button>
       </nav> 
         
       <div className="search"> 
@@ -59,6 +59,7 @@ function App() {
       </div>
       
       <Gallery searchTerm={searchTerm} setSearchTerm={setSearchTerm} data={data}/>
+      
     </div>
   );
 }

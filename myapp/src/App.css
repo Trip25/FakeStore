@@ -7,7 +7,12 @@ background-color:#14213D;
 color: #E5E5E5;
 font-family: 'Acme', sans-serif;
 }
-
+.title{
+  font-weight: 600;
+  font-size: 55px;
+  left: 100px;
+  position: fixed;
+}
 
 .landing-page {
   display: grid;
@@ -31,6 +36,37 @@ font-family: 'Acme', sans-serif;
   border-radius: 10%;
 }
 
+.item-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #847996;
+  box-shadow: #14213D 0px 0px 20px 4px;
+  contain: content;
+}
+.add-to-cart-button{
+  contain: content;
+  bottom: 10px;
+  left: 82px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+  border-radius: 40%;
+  background-color: #14213D;
+  color: aliceblue;
+}
+.add-to-cart-button:hover{
+  box-shadow: #14213D 0px 0px 20px 4px;
+  transition: ease-in 0.3ms;
+  transform: scale(1.1);
+  background-color: aliceblue;
+  color: #14213D;
+}
+
 .title {
 display: block;
 }
@@ -39,12 +75,18 @@ input{
 width: 280px;
 height: 20px;
 }
+input::after
 
 .dropdown{
 height: 27px;
 cursor: pointer;
 background-color:#847996;
 border-radius: 5px;
+}
+.dropdown:hover{
+  box-shadow: #14213D 0px 0px 20px 4px;
+  transition: ease-in 0.3ms;
+  transform: scale(1.1);
 }
 
 .search {
@@ -59,6 +101,7 @@ cursor: pointer;
 border-radius: 5px;
 }
 
+
 .navbar {
   position: sticky;
   top: 0;
@@ -70,14 +113,38 @@ border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1; 
+  /* z index added to stop items going over the nav bar when you scroll down */
 }
 .cart {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 30px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: orange;
   cursor: pointer;
+}
+.cart:hover{
+  box-shadow: #14213D 0px 0px 20px 4px;
+  transition: ease-in 0.3ms;
+  /* enlarge */
+  transform: scale(1.1);
+}
+
+.dark-mode-btn{
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  right: 5%;
+  display: flex;
+  grid-column: inherit;
+  cursor: pointer;
+}
+
+.dark-mode-btn:hover{
+  box-shadow: #14213D 0px 0px 20px 4px;
+  transition: ease-in 0.3ms;
+  transform: scale(1.1);
 }
